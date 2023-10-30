@@ -3,18 +3,19 @@ APS de Lógica da Computação
 
 ## EBNF
 ```
-PROGRAMA = { DECLARAÇÃO };
-DECLARAÇÃO = ( λ | ATRIBUIÇÃO | IMPRIMIR | CONTROLE ), "\n" ;
-ATRIBUIÇÃO = IDENTIFICADOR, "=", EXPRESSÃO ;
-IMPRIMIR = "Imprimir", "(", EXPRESSÃO, ")" ;
-CONTROLE = SE | LAÇO ;
-SE = "se", "(", EXPRESSÃO, ")", "{", { DECLARAÇÃO }, "}", [ "senao", "{", { DECLARAÇÃO }, "}" ];
-LAÇO = "enquanto", "(", EXPRESSÃO, ")", "{", { DECLARAÇÃO }, "}" ;
-EXPRESSÃO = TERMO, { ("+" | "-"), TERMO } ;
-TERMO = FATOR, { ("*" | "/"), FATOR } ;
-FATOR = (("+" | "-"), FATOR) | NÚMERO | "(", EXPRESSÃO, ")" | IDENTIFICADOR ;
-IDENTIFICADOR = LETRA, { LETRA | DÍGITO | "_" } ;
-NÚMERO = DÍGITO, { DÍGITO } ;
+PROGRAMA = { DECLARACION };
+DECLARACION = ( λ | ASIGNACION | IMPRIMIR | CONTROL ), "\n" ;
+ASIGNACION = IDENTIFICADOR, "=", EXPRESION ;
+IMPRIMIR = "Imprimir", "(", EXPRESION, ")" ;
+CONTROL = SI | BUCLE ;
+SI = "si", "(", EXPRESION, ")", "{", { DECLARACION }, "}", [ "sino", "{", { DECLARACION }, "}" ];
+BUCLE = "mientras", "(", EXPRESION, ")", "{", { DECLARACION }, "}" ;
+EXPRESION = TERMINO, { ("+" | "-"), TERMINO } ;
+TERMINO = FACTOR, { ("*" | "/"), FACTOR } ;
+FACTOR = (("+" | "-"), FACTOR) | NUMERO | "(", EXPRESION, ")" | IDENTIFICADOR ;
+IDENTIFICADOR = LETRA, { LETRA | DIGITO | "_" } ;
+NUMERO = DIGITO, { DIGITO } ;
 LETRA = ( a | ... | z | A | ... | Z | á | é | í | ó | ú | ç | ã | õ ) ;
-DÍGITO = ( 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 ) ;
+DIGITO = ( 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 ) ;
+
 ```
