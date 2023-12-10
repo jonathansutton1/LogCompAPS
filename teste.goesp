@@ -1,0 +1,81 @@
+
+func suma(x ent, y ent) ent {
+    devolver x + y
+}
+
+func leer() ent {
+    devolver LeerLinea() //ler
+}
+
+func concat(a cadena, b cadena) cadena {
+    devolver a . b
+}
+
+func main() ent {
+    var x_1 ent
+    x_1 = suma(read()-1, 1)
+    suma(2, 1)
+
+    Imprimir(x_1)
+
+    si (x_1 > 1 && !!!(x_1 < 1)) || x_1 == 3 {
+        x_1 = 2
+    } 
+
+
+    var x ent = 3+6/3   *  2 -+-  +  2*4/2 + 0/1 -((6+ ((4)))/(2)) // Teste // Teste 2
+    var y_1 ent = 3
+    y_1 = suma(y_1, x_1)
+    var z__ ent
+    z__ = suma(x, y_1)
+
+    si x_1 == 2 {
+        x_1 = 2
+    }
+
+    si x_1 == 3 {
+        x_1 = 2
+    } sino {
+        x_1 = 3
+    }
+
+    mientras x_1 = 0; x_1 < 1 || x == 2; x_1 = suma(x_1, 1) {
+        Imprimir(x_1)
+    } 
+
+
+
+    // Saida final
+    Imprimir(x_1)
+    Imprimir(x)
+    Imprimir(z__+1)
+
+    var y ent = 2
+    var z ent
+    z = (y == 2)
+    Imprimir(y+z)
+    Imprimir(y-z)
+    Imprimir(y*z)
+    Imprimir(y/z)
+    Imprimir(y == z)
+    Imprimir(y < z)
+    Imprimir(y > z)
+
+    // All str operations 
+    var a cadena 
+    var b cadena
+
+    x_1 = 1 
+    y = 1 
+    z = 2
+    a = "abc"
+    b = "def"
+    Imprimir(concat(a."",b.""))
+    Imprimir(a.x_1)
+    Imprimir(x_1.a)
+    Imprimir(y.z)
+    Imprimir(a.(x_1==1))
+    Imprimir(a == a)
+    Imprimir(a < b)
+    Imprimir(a > b)
+}
