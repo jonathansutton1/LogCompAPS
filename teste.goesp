@@ -13,7 +13,7 @@ func concat(a cadena, b cadena) cadena {
 
 func main() ent {
     var x_1 ent
-    x_1 = suma(read()-1, 1)
+    x_1 = suma(leer()-1, 1)
     suma(2, 1)
 
     Imprimir(x_1)
