@@ -30,3 +30,17 @@ LETRA = ( a | ... | z | A | ... | Z ) ;
 DIGITO = ( 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 ) ;
 
 ```
+
+## Dicionário
+```
+Println -> Imprimir
+if -> si
+else -> sino
+for -> mientras
+func -> func
+return -> devolver
+int -> ent
+string -> cadena
+Scanln -> LeerLinea
+```
+
